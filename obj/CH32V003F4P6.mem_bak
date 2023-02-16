@@ -1,0 +1,45 @@
+.text
+	|	0x000000a0	|	__riscv_save_1          	|	FUNC  	|	0xa
+	|	0x000000aa	|	__riscv_restore_2       	|	FUNC  	|	0xa
+	|	0x000000b4	|	__divsi3                	|	FUNC  	|	0x58
+	|	0x000000bc	|	__udivsi3               	|	FUNC  	|	0x2c
+	|	0x000000e8	|	__umodsi3               	|	FUNC  	|	0x8
+	|	0x0000010c	|	__modsi3                	|	FUNC  	|	0x24
+	|	0x00000132	|	NMI_Handler             	|	FUNC  	|	0x4
+	|	0x00000136	|	HardFault_Handler       	|	FUNC  	|	0x2
+	|	0x00000138	|	Get_ADC_Val             	|	FUNC  	|	0x30
+	|	0x00000168	|	main                    	|	FUNC  	|	0x6a
+	|	0x000001d2	|	SystemInit              	|	FUNC  	|	0xfe
+	|	0x0000038a	|	ADC_SoftwareStartConvCmd	|	FUNC  	|	0x18
+	|	0x000003a2	|	ADC_RegularChannelConfig	|	FUNC  	|	0xba
+	|	0x0000045c	|	ADC_GetConversionValue  	|	FUNC  	|	0x8
+	|	0x00000464	|	ADC_GetFlagStatus       	|	FUNC  	|	0xa
+	|	0x0000046e	|	GPIO_Init               	|	FUNC  	|	0xd6
+	|	0x00000544	|	NVIC_PriorityGroupConfig	|	FUNC  	|	0xa
+	|	0x0000054e	|	RCC_GetClocksFreq       	|	FUNC  	|	0x96
+	|	0x000005e4	|	RCC_APB2PeriphClockCmd  	|	FUNC  	|	0x1e
+	|	0x00000602	|	USART_Init              	|	FUNC  	|	0xc0
+	|	0x000006c2	|	USART_Cmd               	|	FUNC  	|	0x16
+	|	0x000006d8	|	USART_SendData          	|	FUNC  	|	0x8
+	|	0x000006e0	|	USART_GetFlagStatus     	|	FUNC  	|	0xa
+	|	0x000006ea	|	Delay_Init              	|	FUNC  	|	0x38
+	|	0x00000722	|	USART_Printf_Init       	|	FUNC  	|	0x52
+	|	0x00000774	|	_write                  	|	FUNC  	|	0x4a
+	|	0x000007be	|	printchar               	|	FUNC  	|	0x48
+	|	0x00000806	|	prints                  	|	FUNC  	|	0xe6
+	|	0x000008ec	|	printInt                	|	FUNC  	|	0x10e
+	|	0x000009fa	|	printLongLongInt        	|	FUNC  	|	0x4
+	|	0x000009fe	|	printDouble             	|	FUNC  	|	0x4
+	|	0x00000a02	|	print                   	|	FUNC  	|	0x352
+	|	0x00000d54	|	printf                  	|	FUNC  	|	0x22
+
+.data
+	|	0x20000000	|	SystemCoreClock         	|	OBJECT	|	0x4
+	|	0x20000004	|	ADCPrescTable           	|	OBJECT	|	0x14
+	|	0x20000018	|	APBAHBPrescTable        	|	OBJECT	|	0x10
+
+.bss
+	|	0x20000028	|	NVIC_Priority_Group     	|	OBJECT	|	0x4
+	|	0x2000002c	|	p_ms                    	|	OBJECT	|	0x2
+	|	0x2000002e	|	p_us                    	|	OBJECT	|	0x1
+
